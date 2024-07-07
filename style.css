@@ -14,20 +14,23 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
+    flex-direction: column;
+    text-align: center;
 }
 
 .intro {
-    max-width: 60%;
+    max-width: 100%;
+    margin-bottom: 2em;
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 2.5em;
     margin: 0;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin: 0;
 }
 
@@ -36,23 +39,25 @@ h2 {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 10px 0;
 }
 
 a {
     color: #fff;
+    text-decoration: none;
 }
 
 .icons {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5em;
+    gap: 1em;
 }
 
 .icon {
-    width: 10em;
-    height: 10em;
+    width: 5em;
+    height: 5em;
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
@@ -71,4 +76,60 @@ a {
 
 .icon:hover {
     filter: invert(25%);
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .intro {
+        max-width: 60%;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .icons {
+        gap: 3em;
+    }
+
+    .icon {
+        width: 7em;
+        height: 7em;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .icons {
+        gap: 5em;
+    }
+
+    .icon {
+        width: 10em;
+        height: 10em;
+    }
 }
