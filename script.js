@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+        // Do not run the particle effect on mobile devices
+        return;
+    }
+
     const points = [];
     const pointCount = canvas.width / 4;
     const maxDistance = 100;
