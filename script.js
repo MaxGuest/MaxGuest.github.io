@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     canvas.height = window.innerHeight;
 
     const points = [];
-    const pointCount = 220;
+    const pointCount = canvas.width / 4;
     const maxDistance = 100;
     const maxDisplacement = 20; // Maximum displacement from the base position
     const mouse = { x: canvas.width / 2, y: canvas.height / 2 };
