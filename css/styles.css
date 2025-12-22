@@ -1,0 +1,68 @@
+:root {
+  /* Main Colors */
+  --primary-color: #F02F34;
+  --secondary-color: #E7D3BB;
+
+  /* Neutral Colors */
+  --bg-color: #f4f4f4;
+  --text-color: #333333;
+  --white: #ffffff;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+/* card */
+.card {
+  overflow: hidden;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(15,23,42,0.12);
+  display: grid;
+  gap: 0;
+  color: var(--text-color)
+}
+
+.card-itch-io {
+  max-width: 100%;
+  border: none;
+  background: transparent;
+}
+
+#itch-embed {
+    border: none !important; /* Force removes any borders */
+    background: transparent !important;
+    max-width: 100%; /* Prevents it from breaking on mobile */
+}
+
+.card-body {
+  padding: 24px 28px;
+}
+.card-body h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 12px 60px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+  background: var(--primary-color);
+  color: #fff;
+}
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+/* games-list */
+.games-list {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: clamp(32px, 5vw, 80px);
+}
