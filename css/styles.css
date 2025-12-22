@@ -10,6 +10,7 @@
 /* Body of the page */
 body {
     background-color: var(--background-color);
+    font-family: 'Open Sans';
 }
 
 /* card */
@@ -32,6 +33,7 @@ body {
 .card-body {
   padding: 24px 28px;
 }
+
 .card-body h3 {
   margin-top: 0;
   margin-bottom: 12px;
@@ -48,6 +50,7 @@ body {
   background: var(--accent);
   color: var(--text-color);
 }
+
 .btn:hover {
   background: var(--accent-secondary);
 }
