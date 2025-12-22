@@ -64,6 +64,13 @@ body {
   padding: clamp(32px, 5vw, 80px);
 }
 
+/* games */
+.games {
+  margin: 24px;
+  display: grid;
+  place-items: center;
+}
+
 /* Links */
 .link:link {
     color: var(--text-color)
