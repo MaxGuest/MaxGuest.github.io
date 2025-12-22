@@ -34,7 +34,7 @@ body {
   padding: 24px 28px;
 }
 
-.card-body h3 {
+.card-body h1 {
   margin-top: 0;
   margin-bottom: 12px;
 }
@@ -53,6 +53,7 @@ body {
 
 .btn:hover {
   background: var(--accent-secondary);
+  color: var(--text-color);
 }
 
 /* games-list */
@@ -61,4 +62,13 @@ body {
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: clamp(32px, 5vw, 80px);
+}
+
+/* Links */
+.link:link {
+    color: var(--text-color)
+}
+
+.link:visited {
+    color: var(--accent-secondary)
 }
