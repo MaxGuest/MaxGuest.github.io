@@ -1,7 +1,7 @@
 :root {
   /* Main Colors */
-  --primary-color: #F02F34;
-  --secondary-color: #E7D3BB;
+  --primary-color: #abf62d;
+  --secondary-color: #d6a3fb;
 
   /* Neutral Colors */
   --bg-color: #f4f4f4;
@@ -30,12 +30,6 @@ body {
   background: transparent;
 }
 
-#itch-embed {
-    border: none !important; /* Force removes any borders */
-    background: transparent !important;
-    max-width: 100%; /* Prevents it from breaking on mobile */
-}
-
 .card-body {
   padding: 24px 28px;
 }
@@ -53,7 +47,7 @@ body {
   text-decoration: none;
   transition: 0.2s ease;
   background: var(--primary-color);
-  color: #fff;
+  color: var(--text-color);
 }
 .btn:hover {
   background: var(--secondary-color);
