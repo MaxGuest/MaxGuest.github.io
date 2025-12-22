@@ -1,22 +1,21 @@
+/* Color vars */
 :root {
-  /* Main Colors */
-  --primary-color: #abf62d;
-  --secondary-color: #d6a3fb;
-
-  /* Neutral Colors */
-  --bg-color: #f4f4f4;
-  --text-color: #333333;
-  --white: #ffffff;
+  --background-color: #2C3D73;
+  --card-background: #6793AC;
+  --text-color:  #f8fafc;
+  --accent: #E4580B;
+  --accent-secondary: #114AB1;
 }
 
+/* Body of the page */
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
 }
 
 /* card */
 .card {
   overflow: hidden;
-  background: var(--white);
+  background: var(--card-background);
   border-radius: 18px;
   box-shadow: 0 20px 40px rgba(15,23,42,0.12);
   display: grid;
@@ -46,11 +45,11 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: 0.2s ease;
-  background: var(--primary-color);
+  background: var(--accent);
   color: var(--text-color);
 }
 .btn:hover {
-  background: var(--secondary-color);
+  background: var(--accent-secondary);
 }
 
 /* games-list */
