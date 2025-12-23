@@ -3,7 +3,9 @@
   --background-color: #2C3D73;
   --card-background: #6793AC;
   --text-color:  #f8fafc;
-  --accent: #E4580B;
+  --button-text-color: #526EFF;
+  /* --accent: #E4580B; */
+  --accent: #ffe352;
   --accent-secondary: #114AB1;
 }
 
@@ -16,12 +18,17 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
+  background: var(--card-background);
+  background: linear-gradient(180deg,rgba(103, 147, 172, 1) 74%, rgba(162, 189, 204, 1) 89%, rgba(248, 250, 252, 1) 100%);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  width: 95%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%;
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  color: var(--accent);
+  font-family: 'Nabla';
+  color: var(--text-color);
+  font-size: 3vw;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -30,6 +37,7 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
+  font-size: 2vw;
   gap: 20px;
 }
 
@@ -94,12 +102,12 @@ footer {
   text-decoration: none;
   transition: 0.2s ease;
   background: var(--accent);
-  color: var(--text-color);
+  color: var(--button-text-color);
 }
 
 .btn:hover {
   background: var(--accent-secondary);
-  color: var(--text-color);
+  color: var(--accent);
 }
 
 /* games-list */
