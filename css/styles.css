@@ -13,21 +13,41 @@ body {
     font-family: 'Open Sans';
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  margin-top: 50px;
+}
+
+/* Itch widget */
+.itch-widget-container {
+  width: 100%;
+  max-width: 600px;
+  /* margin: 10px; */
+}
+
+.itch-widget-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+}
+
 /* card */
 .card {
   overflow: hidden;
+  height: auto;
+  width: auto;
   background: var(--card-background);
   border-radius: 18px;
   box-shadow: 0 20px 40px rgba(15,23,42,0.12);
   display: grid;
   gap: 0;
-  color: var(--text-color)
-}
-
-.card-itch-io {
-  max-width: 100%;
-  border: none;
-  background: transparent;
+  color: var(--text-color);
+  flex: 1 1 45%; 
+  min-width: 300px; /* Forces stack when container is narrow */
 }
 
 .card-body {
@@ -37,6 +57,12 @@ body {
 .card-body h1 {
   margin-top: 0;
   margin-bottom: 12px;
+}
+
+.card-body p {
+  /* font-size: 1.5vw; */
+  word-wrap: break-word;
+  margin-left: auto;
 }
 
 /* button */
@@ -58,9 +84,9 @@ body {
 
 /* games-list */
 .games-list {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding: clamp(32px, 5vw, 80px);
 }
 
@@ -78,4 +104,8 @@ body {
 
 .link:visited {
     color: var(--accent-secondary)
+}
+
+.link:hover {
+  color: var(--accent)
 }
