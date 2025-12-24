@@ -3,11 +3,11 @@ class THeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <nav class="navbar">
-        <div class="logo">Max Guest</div>
+        <a class="logo" href="index.html">Max Guest</a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a class="link" href="index.html#games-section">Games</a></li>
+            <li><a class="link" href="contact.html">Contact</a></li>
+            <li><a class="link" href="about.html">About</a></li>
         </ul>
     </nav>
     `;
