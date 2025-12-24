@@ -6,12 +6,15 @@
   --button-text-color: #526EFF;
   --accent: #ffe352;
   --accent-secondary: #114AB1;
+  --main-font: 'Open Sans';
+  --exciting-font: 'Nabla';
 }
 
 /* Body of the page */
 body {
     background-color: var(--background-color);
-    font-family: 'Open Sans';
+    font-family: var(--main-font);
+    color: var(--text-color);
 }
 
 /* Navbar */
@@ -25,7 +28,7 @@ body {
   width: 95%;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Nabla';
+  font-family: var(--exciting-font);
   color: var(--text-color);
   font-size: 3vw;
   position: sticky;
@@ -43,8 +46,13 @@ body {
 /* Footer */
 footer {
   text-align: center;
-  padding: 2rem;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  width: 95%;
+  height: 100px;
   background-color: var(--card-background);
+  background: linear-gradient(360deg,rgba(103, 147, 172, 1) 74%, rgba(162, 189, 204, 1) 89%, rgba(248, 250, 252, 1) 100%);
   color: var(--text-color);
   margin-top: 50px;
 }
@@ -53,7 +61,6 @@ footer {
 .itch-widget-container {
   width: 100%;
   max-width: 600px;
-  /* margin: 10px; */
 }
 
 .itch-widget-container iframe {

@@ -6,8 +6,8 @@ class THeader extends HTMLElement {
         <div class="logo">Max Guest</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="contact-page/contact.html">Contact</a></li>
-            <li><a href="about-page/about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
     `;
@@ -53,3 +53,31 @@ class GameCard extends HTMLElement {
   }
 }
 customElements.define("game-card", GameCard);
+
+// Embedded Games
+class EmbeddedGame extends HTMLElement {
+  connectedCallback() {
+    const game = this.getAttribute("game");
+    const heading1 = this.getAttribute("heading1");
+    const details1 = this.getAttribute("details1");
+    const heading2 = this.getAttribute("heading2");
+    const details2 = this.getAttribute("details2");
+
+    this.innerHTML = `
+        <div class="embedded-games">
+            <div class="games">
+                ${game}
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1>${heading1}</h1>
+                    <p>${details1}</p>
+                    <h1>${heading2}</h1>
+                    <p>${details2}</p>
+                </div>
+            </div>
+        </div>
+    `;
+  }
+}
+customElements.define("embedded-game", EmbeddedGame);
