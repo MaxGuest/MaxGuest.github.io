@@ -130,7 +130,7 @@ footer {
 }
 
 .link:visited {
-    color: var(--accent-secondary)
+    color: var(--text-color)
 }
 
 .link:hover {
