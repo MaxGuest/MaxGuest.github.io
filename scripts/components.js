@@ -13,7 +13,8 @@ class THead extends HTMLElement {
         <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"> 
         <!-- Add icon library -->
         <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
-        <link href="fontawesome/css/brands.min.css" rel="stylesheet"> 
+        <link href="fontawesome/css/brands.min.css" rel="stylesheet">
+        <link href="fontawesome/css/regular.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     `;
@@ -44,9 +45,19 @@ class TFooter extends HTMLElement {
     this.innerHTML = `
     <footer>
         <ul class="social">
-            <li data-tooltip="Itch.io">
-                <a href="https://i-am-guest.itch.io/" aria-label="Itch.io">
-                <i class="fa-brands fa-itch-io"></i>
+            <li>
+                <a href="https://www.linkedin.com/in/max-guest-569853310/">
+                <i class="fa fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://i-am-guest.itch.io/">
+                <i class="fa fa-brands fa-itch-io"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:maxguestwork@gmail.com">
+                <i class="fa fa-solid fa-envelope"></i>
                 </a>
             </li>
         </ul>
