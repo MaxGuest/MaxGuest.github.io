@@ -10,6 +10,7 @@
   --exciting-font: 'Nabla';
   --mobile-size: 768px;
   --main-border-radius: 18px;
+  --box-shadow-value: 14px 14px rgba(19, 15, 42, 0.6);
 }
 
 html {
@@ -78,8 +79,9 @@ footer {
 
 /* Itch widget */
 .itch-widget-container {
-  width: 100%;
+  width: 90%;
   max-width: 600px;
+  padding: 14px;
 }
 
 .itch-widget-container iframe {
@@ -95,7 +97,7 @@ footer {
   width: auto;
   background: var(--card-background);
   border-radius: var(--main-border-radius);
-  box-shadow: 0 20px 40px rgba(15,23,42,0.12);
+  box-shadow: var(--box-shadow-value);
   display: grid;
   gap: 0;
   color: var(--text-color);
@@ -238,7 +240,7 @@ footer {
   width: auto;
   background: var(--card-background);
   border-radius: var(--main-border-radius);
-  box-shadow: 0 20px 40px rgba(15,23,42,0.12);
+  box-shadow: var(--box-shadow-value);
   color: var(--text-color);
   flex: 1 1 45%; 
   text-align: left;
@@ -274,6 +276,7 @@ footer {
   background-size: cover;
   background-position: center;
   border-radius: var(--main-border-radius);
+  box-shadow: var(--box-shadow-value);
 }
 
 .contact-image {
@@ -282,8 +285,8 @@ footer {
 }
 
 .about-image {
-  height: 400px;
-  width: 2000px;
+  height: 600px;
+  width: 3000px;
   background-image: url(../images/game-thumbnails.gif);
 }
 

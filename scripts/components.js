@@ -84,7 +84,7 @@ class GameCard extends HTMLElement {
         <div class="card-body">
             <h1>${heading}</h1>
             <p>${details}</p>
-            <a class="btn" href="${link}">${linkText}</a>
+            <!-- <a class="btn" href="${link}">${linkText}</a> -->
         </div>
     </article>
     `;
