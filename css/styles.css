@@ -232,7 +232,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 20px;
+  padding: 40px;
   margin: 50px;
   height: auto;
   width: auto;
@@ -241,7 +241,7 @@ footer {
   box-shadow: 0 20px 40px rgba(15,23,42,0.12);
   color: var(--text-color);
   flex: 1 1 45%; 
-  text-align: center;
+  text-align: left;
 }
 
 .side-image {
@@ -268,13 +268,23 @@ footer {
   border-radius: var(--main-border-radius);
 }
 
+/* Banner */
 .banner {
   width: 100%;
-  height: 400px;
-  background-image: url(../images/game-jam.png);
   background-size: cover;
   background-position: center;
   border-radius: var(--main-border-radius);
+}
+
+.contact-image {
+  height: 400px;
+  background-image: url(../images/game-jam.png);
+}
+
+.about-image {
+  height: 400px;
+  width: 2000px;
+  background-image: url(../images/game-thumbnails.gif);
 }
 
 /* Mobile Responsive adjustment */
