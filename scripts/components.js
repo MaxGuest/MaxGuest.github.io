@@ -51,6 +51,11 @@ class TFooter extends HTMLElement {
                 </a>
             </li>
             <li>
+                <a href="https://github.com/MaxGuest">
+                <i class="fa fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
                 <a href="https://i-am-guest.itch.io/">
                 <i class="fa fa-brands fa-itch-io"></i>
                 </a>
