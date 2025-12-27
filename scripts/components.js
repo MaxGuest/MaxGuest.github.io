@@ -6,6 +6,7 @@ class THead extends HTMLElement {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio for Max Guest</title>
+        <link rel="icon" type="image/x-icon" href="images/websitelogo.png">
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,10 @@ class THeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <nav class="navbar">
-        <a class="logo" href="index.html">Max Guest</a>
+        <div class="logo">
+          <img class="resize" src="images/nobackgroundlogo.png"></img>
+          <a class="logo" href="index.html">Max Guest</a>
+        </div>
         <ul class="nav-links">
             <li><a class="link" href="index.html#games-section">Games</a></li>
             <li><a class="link" href="contact.html">Contact</a></li>

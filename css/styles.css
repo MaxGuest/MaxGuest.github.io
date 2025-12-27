@@ -37,7 +37,6 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: var(--exciting-font);
-  font-size: 3rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -48,6 +47,13 @@ body {
   list-style: none;
   font-size: 2rem;
   gap: 20px;
+}
+
+.logo {
+  font-size: 3rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .logo:link {
@@ -62,12 +68,17 @@ body {
   color: var(--accent)
 }
 
+.resize {
+  width: 100px;
+  height: auto;
+}
+
 
 /* Footer */
 footer {
   text-align: center;
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 10px 5px;
   margin: 0 auto;
   width: 95%;
   height: 100px;
@@ -115,7 +126,6 @@ footer {
 }
 
 .card-body p {
-  /* font-size: 1.5vw; */
   word-wrap: break-word;
   margin-left: auto;
 }
